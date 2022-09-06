@@ -39,6 +39,25 @@ header {
 #sidebar {
     height: 100%;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(134, 144, 177, 0.199);
+}
+
+#sidebar>#buttons {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+#sidebar>#buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #main {
