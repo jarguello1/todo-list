@@ -16,6 +16,16 @@ taskbtn.addEventListener('click', (e) => {
 
   }
 
+  const addBtn = document.getElementById("addBtns");
+  addBtn.addEventListener('click',hideBtn);
+
+  const sideForm = document.getElementById('sideForm');
+
+  function hideBtn(e) {
+    const button = document.getElementById(e.target.id);
+    button.style.display = 'none';
+  }
+
   function getTask() {
     //get task from user
   }

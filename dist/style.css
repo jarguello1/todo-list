@@ -80,6 +80,10 @@ header {
     color: black;
 }
 
+form {
+    display: none;
+}
+
 #main {
     height: 100%;
     width: 80%;
