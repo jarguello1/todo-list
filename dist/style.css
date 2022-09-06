@@ -49,6 +49,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -60,10 +61,18 @@ header {
     font-size: 24px;
 }
 
+#sidebar>#buttons>button {
+    width: fit-content;
+}
+
 #sidebar button:hover {
     font-size: 26px;
     font-style: italic;
 }
+
+#sidebar > #buttons > button.active {
+    border-bottom: 2px solid;
+  }
 
 #sidebar>#projects {
     display: flex;
