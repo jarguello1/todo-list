@@ -17,7 +17,10 @@ taskbtn.addEventListener('click', (e) => {
   }
 
   const addBtn = document.getElementById("addBtns");
-  addBtn.addEventListener('click',hideBtn);
+  addBtn.addEventListener('click', (e) => {
+    hideBtn(e);
+    sideForm.style.display = 'grid';
+  });
 
   const sideForm = document.getElementById('sideForm');
 
