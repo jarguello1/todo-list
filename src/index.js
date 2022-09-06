@@ -16,18 +16,16 @@ taskbtn.addEventListener('click', (e) => {
 
   }
 
-  const addBtn = document.getElementById("addBtns");
+  const addBtn = document.getElementById("addProjects");
   addBtn.addEventListener('click', (e) => {
-    hideBtn(e);
+    const button = document.getElementById(e.target.id);
+    button.style.display = 'none';
     sideForm.style.display = 'grid';
   });
+  
 
   const sideForm = document.getElementById('sideForm');
 
-  function hideBtn(e) {
-    const button = document.getElementById(e.target.id);
-    button.style.display = 'none';
-  }
 
   function getTask() {
     //get task from user

@@ -7,6 +7,17 @@ function createTaskBox() {
     title.textContent = "Tasks";
     taskContainer.appendChild(title);
 
+    const addBtns = document.createElement('button');
+    addBtns.setAttribute('id', 'addTasks');
+    addBtns.textContent = "+ New Tasks"
+    addBtns.addEventListener('click', (e) => {
+        const button = document.getElementById(e.target.id);
+        button.style.display = 'none';
+        const form = document.getElementById('taskFormInput');
+        form.style.display = 'grid';
+    });
+
+    taskContainer.appendChild(addBtns);
 
     taskContainer.appendChild(createForm());
 

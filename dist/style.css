@@ -53,7 +53,7 @@ header {
     gap: 25px;
 }
 
-#sidebar button {
+button {
     background: none;
     border: none;
     color: white;
@@ -103,6 +103,19 @@ form input {
 #main {
     height: 100%;
     width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#taskContainer {
+    width: 60vh;
+    padding: 35px 0px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
 }
 
 footer {
