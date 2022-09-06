@@ -40,3 +40,15 @@ taskbtn.addEventListener('click', (e) => {
   function updateListDisplay() {
     // update displayed list so that it shows new tasks
   }
+
+  function setActiveButton(button) {
+    const buttons = document.querySelectorAll('.defaultBtns');
+  
+    buttons.forEach((button) => {
+      if (button !== this) {
+        button.classList.remove('active');
+      }
+    });
+  
+    button.classList.add('active');
+  }

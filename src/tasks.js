@@ -4,7 +4,7 @@ function createTaskBox() {
 
     const title = document.createElement('p');
     title.classList.add('title');
-    title.textContent = "taskContainer";
+    title.textContent = "Tasks";
     taskContainer.appendChild(title);
 
     return taskContainer;
