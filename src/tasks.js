@@ -1,19 +1,19 @@
 function createTaskBox() {
-    const tasks = document.createElement('div');
-    tasks.setAttribute('id', 'tasks');
+    const taskContainer = document.createElement('div');
+    taskContainer.setAttribute('id', 'taskContainer');
 
     const title = document.createElement('p');
     title.classList.add('title');
-    title.textContent = "Tasks";
-    tasks.appendChild(title);
+    title.textContent = "taskContainer";
+    taskContainer.appendChild(title);
 
-    return tasks;
+    return taskContainer;
 }
 
-function loadTasks() {
+function loadTaskContainer() {
     const main = document.getElementById('main');
     main.textContent = '';
     main.appendChild(createTaskBox());
 }
 
-export default loadTasks;
+export default loadTaskContainer;

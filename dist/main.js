@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n\n\nconst sidebar = document.getElementById('sidebar');\nconst main = document.getElementById('main');\n\nconst taskbtn = document.getElementById('taskBtn');\ntaskbtn.addEventListener('click', (e) => {\n    if (e.target.classList.contains('active')) return;\n    setActiveButton(taskBtn);\n    (0,_tasks__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  });\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n\n\nconst sidebar = document.getElementById('sidebar');\nconst main = document.getElementById('main');\n\nconst taskbtn = document.getElementById('taskBtn');\ntaskbtn.addEventListener('click', (e) => {\n    if (e.target.classList.contains('active')) return;\n    setActiveButton(taskBtn);\n    (0,_tasks__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  });\n\n  function newTask() {\n    const task = document.createElement('div');\n    task.classList.add('task');\n  }\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tas
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createTaskBox() {\n    const tasks = document.createElement('div');\n    tasks.setAttribute('id', 'tasks');\n\n    const title = document.createElement('p');\n    title.classList.add('title');\n    title.textContent = \"Tasks\";\n    tasks.appendChild(title);\n\n    return tasks;\n}\n\nfunction loadTasks() {\n    const main = document.getElementById('main');\n    main.textContent = '';\n    main.appendChild(createTaskBox());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadTasks);\n\n//# sourceURL=webpack://todo-list/./src/tasks.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createTaskBox() {\n    const taskContainer = document.createElement('div');\n    taskContainer.setAttribute('id', 'taskContainer');\n\n    const title = document.createElement('p');\n    title.classList.add('title');\n    title.textContent = \"taskContainer\";\n    taskContainer.appendChild(title);\n\n    return taskContainer;\n}\n\nfunction loadTaskContainer() {\n    const main = document.getElementById('main');\n    main.textContent = '';\n    main.appendChild(createTaskBox());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadTaskContainer);\n\n//# sourceURL=webpack://todo-list/./src/tasks.js?");
 
 /***/ })
 
