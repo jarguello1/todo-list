@@ -60,6 +60,11 @@ header {
     font-size: 24px;
 }
 
+#sidebar button:hover {
+    font-size: 26px;
+    font-style: italic;
+}
+
 #sidebar>#projects {
     display: flex;
     flex-direction: column;
@@ -69,7 +74,10 @@ header {
     color: rgb(247, 247, 255);
     font-weight: bold;
     font-size: 24px;
-    font-style: italic;
+}
+
+#projects>.title {
+    color: black;
 }
 
 #main {
