@@ -13,4 +13,17 @@ taskbtn.addEventListener('click', (e) => {
   function newTask() {
     const task = document.createElement('div');
     task.classList.add('task');
+
+  }
+
+  function getTask() {
+    //get task from user
+  }
+
+  function addTaskToList() {
+    // add the task to a list of tasks
+  }
+
+  function updateListDisplay() {
+    // update displayed list so that it shows new tasks
   }

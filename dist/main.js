@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n\n\nconst sidebar = document.getElementById('sidebar');\nconst main = document.getElementById('main');\n\nconst taskbtn = document.getElementById('taskBtn');\ntaskbtn.addEventListener('click', (e) => {\n    if (e.target.classList.contains('active')) return;\n    setActiveButton(taskBtn);\n    (0,_tasks__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  });\n\n  function newTask() {\n    const task = document.createElement('div');\n    task.classList.add('task');\n  }\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n\n\nconst sidebar = document.getElementById('sidebar');\nconst main = document.getElementById('main');\n\nconst taskbtn = document.getElementById('taskBtn');\ntaskbtn.addEventListener('click', (e) => {\n    if (e.target.classList.contains('active')) return;\n    setActiveButton(taskBtn);\n    (0,_tasks__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  });\n\n  function newTask() {\n    const task = document.createElement('div');\n    task.classList.add('task');\n\n  }\n\n  function getTask() {\n    //get task from user\n  }\n\n  function addTaskToList() {\n    // add the task to a list of tasks\n  }\n\n  function updateListDisplay() {\n    // update displayed list so that it shows new tasks\n  }\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
