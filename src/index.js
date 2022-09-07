@@ -2,13 +2,6 @@ import loadTaskContainer from "./tasks";
 import loadToday from "./today";
 import loadWeek from "./week";
 
-let myTasks = [];
-
-function Task(name, date = "No date") {
-    this.name = name;
-    this.date = date;
-}
-
 const sidebar = document.getElementById('sidebar');
 const main = document.getElementById('main');
 
