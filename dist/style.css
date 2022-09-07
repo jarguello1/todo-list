@@ -111,7 +111,6 @@ form input {
     display: flex;
     flex-direction: column;
     background-color: rgb(171, 185, 231);
-    height: 50px;
     width: 100%;
 }
 
