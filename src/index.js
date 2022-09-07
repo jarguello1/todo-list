@@ -1,6 +1,10 @@
 import loadTaskContainer from "./taskList";
 import loadToday from "./today";
 import loadWeek from "./week";
+import Storage from "./storage";
+import Project from "./projects";
+import Task from "./tasks";
+
 
 const sidebar = document.getElementById('sidebar');
 const main = document.getElementById('main');
@@ -62,3 +66,8 @@ function setActiveButton(button) {
 
     button.classList.add('active');
 }
+
+(function () {
+    setActiveButton(document.querySelector(".defaultBtns"));
+    loadTaskContainer();
+})();
