@@ -8,7 +8,7 @@ function createTaskBox() {
     taskContainer.appendChild(title);
 
     const allTasks = document.createElement('div');
-    allTasks.classList.add('tasklist');
+    allTasks.classList.add('taskList');
     taskContainer.appendChild(allTasks);
 
     const addBtns = document.createElement('button');

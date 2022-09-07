@@ -8,7 +8,7 @@ function createWeek() {
     week.appendChild(title);
 
     const weeklyTask = document.createElement('div');
-    weeklyTask.classList.add('tasklist');
+    weeklyTask.classList.add('taskList');
     week.appendChild(weeklyTask);
 
     return week;

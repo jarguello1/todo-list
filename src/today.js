@@ -8,7 +8,7 @@ function createToday() {
     today.appendChild(title);
 
     const dailyTask = document.createElement('div');
-    dailyTask.classList.add('tasklist');
+    dailyTask.classList.add('taskList');
     today.appendChild(dailyTask);
 
     return today;

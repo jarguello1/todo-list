@@ -107,6 +107,14 @@ form input {
     justify-content: center;
 }
 
+.taskList {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(146, 158, 199);
+    height: 100px;
+    width: 100px;
+}
+
 #taskContainer {
     width: 60vh;
     padding: 35px 0px;
