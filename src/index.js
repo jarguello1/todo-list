@@ -4,8 +4,8 @@ import loadWeek from "./week";
 
 let myTasks = [];
 
-function Task(task, date) {
-    this.task = task;
+function Task(name, date = "No date") {
+    this.name = name;
     this.date = date;
 }
 
