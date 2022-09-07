@@ -7,6 +7,10 @@ function createWeek() {
     title.textContent = "This Week's Tasks";
     week.appendChild(title);
 
+    const weeklyTask = document.createElement('div');
+    weeklyTask.classList.add('tasklist');
+    week.appendChild(weeklyTask);
+
     return week;
 }
 

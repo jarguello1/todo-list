@@ -7,6 +7,10 @@ function createToday() {
     title.textContent = "Today's Tasks";
     today.appendChild(title);
 
+    const dailyTask = document.createElement('div');
+    dailyTask.classList.add('tasklist');
+    today.appendChild(dailyTask);
+
     return today;
 }
 
