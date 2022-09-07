@@ -1,13 +1,28 @@
 import loadTaskContainer from "./tasks";
+import loadToday from "./today";
+
+myTasks = [];
+
+function Task(task, date) {
+    this.task = task;
+    this.date = date;
+}
 
 const sidebar = document.getElementById('sidebar');
 const main = document.getElementById('main');
 
-const taskbtn = document.getElementById('taskBtn');
-taskbtn.addEventListener('click', (e) => {
+const taskBtn = document.getElementById('taskBtn');
+taskBtn.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
     setActiveButton(taskBtn);
     loadTaskContainer();
+  });
+
+const todayBtn = document.getElementById('todayBtn');
+todayBtn.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
+    setActiveButton(todayBtn);
+    loadToday();
   });
 
   function newTask() {
