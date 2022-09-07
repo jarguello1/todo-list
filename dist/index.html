@@ -19,7 +19,7 @@
             <div id="projects">
                 <div class="title">Projects</div>
                 <button id="addProjects">+ New Project</button>
-                <form class="taskForm" id="sideForm">  
+                <form onsubmit={submitProject(this)} class="taskForm" id="sideForm">  
                     <input type="text">
                     <button class="add">Add</button>
                     <button class="cancel">Cancel</button>

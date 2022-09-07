@@ -32,6 +32,7 @@ function createForm() {
     const form = document.createElement('form');
     form.classList.add('taskForm');
     form.setAttribute('id', 'taskFormInput');
+    form.setAttribute('onsubmit', 'submitTask(this)')
 
     const input = document.createElement('input');
     input.type = 'text';
