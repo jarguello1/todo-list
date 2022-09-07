@@ -1,6 +1,6 @@
 import { compareAsc, toDate } from 'date-fns'
-import Project from './Project'
-import Task from './Task'
+import Project from './projects'
+import Task from './tasks'
 
 export default class TodoList {
   constructor() {
