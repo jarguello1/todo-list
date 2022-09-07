@@ -110,14 +110,24 @@ form input {
 .taskList {
     display: flex;
     flex-direction: column;
-    background-color: rgb(146, 158, 199);
-    height: 100px;
-    width: 100px;
+    background-color: rgb(171, 185, 231);
+    height: 50px;
+    width: 100%;
 }
 
 #taskContainer {
     width: 60vh;
     padding: 35px 0px;
+}
+#today  {
+    width: 60vh;
+    padding: 35px 0px;
+}
+
+#week {
+    width: 60vh;
+    padding: 35px 0px;
+
 }
 
 .title {
