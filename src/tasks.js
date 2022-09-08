@@ -23,6 +23,10 @@ export default function Task(name, dueDate = 'no date', project = 'no project') 
     this.setProject = function(project) {
         this.project = project;
     }
+
+    this.getProject = function() {
+      return this.project;
+    }
   
     this.getDateFormatted = function() {
       const day = this.dueDate.split('/')[0];
